@@ -250,17 +250,133 @@ a {
 	width: 100%;
 }
 /* ! Footer Area */
-footer {
+.contact_section_wrap {
 	background-color: #fff;
-	padding: 19px 0px 17px;
+	padding: 78px 0px 105px;
 }
-footer ul {
+.contact_section {
+	max-width: 1065px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.contact_left {
+	max-width: 711px;
+	width: 100%;
+}
+.contact_left h2 {
+	color: var(--secondary);
+	font-family: var(--primary-font);
+	font-size: 68px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: capitalize;
+}
+.contact_left p {
+	color: var(--secondary);
+	font-family: var(--secondary-font);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 32px;
+	margin-bottom: 76px;
+}
+.contact_left a {
+	color: var(--secondary);
+	font-family: var(--secondary-font);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 72px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+}
+.contact_left a img {
+	position: absolute;
+}
+.footer_link_area {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 320px;
+}
+.footer_link_area .item {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	padding-left: 124px;
+	transition: all 0.4s ease-in-out;
+}
+.footer_link_area .active {
+	background-color: var(--primary);
+}
+.footer_link_area .item:hover {
+	background-color: var(--primary);
+	transition: all 0.4s ease-in-out;
+}
+.footer_link_area .item h2 {
+	color: #fff;
+	font-family: var(--primary-font);
+	font-size: 68px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: capitalize;
+}
+.footer_link_area .item p {
+	color: #fff;
+	font-family: var(--secondary-font);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.footer_link_area .active p,
+.footer_link_area .active h2,
+.footer_link_area .item:hover p,
+.footer_link_area .item:hover h2 {
+	color: var(--secondary);
+	transition: all 0.4s ease-in-out;
+}
+.footer_link_area .item img {
+	width: 43px;
+	height: 47px;
+	position: absolute;
+	right: 170px;
+	bottom: 115px;
+	transition: all 0.4s ease-in-out;
+}
+.footer_link_area .item:hover img {
+	width: 60px;
+	height: 64px;
+	right: 30px;
+	bottom: 36px;
+	transition: all 0.4s ease-in-out;
+}
+.footer_link_area .active img {
+	width: 60px;
+	height: 64px;
+	right: 30px;
+	bottom: 36px;
+	transition: all 0.4s ease-in-out;
+}
+.footer_links {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 58px;
+	background-color: #fff;
+	padding: 19px 0px 17px;
 }
-footer ul li a {
+.footer_links li a {
 	color: var(--secondary);
 	font-family: var(--secondary-font);
 	font-size: 18px;
