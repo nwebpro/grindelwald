@@ -1,0 +1,269 @@
+/* ! Custom Font */
+@font-face {
+	font-family: 'Boska';
+	src: url('../fonts/Boska-Variable.ttf') format('truetype');
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Boska';
+	src: url('../fonts/Boska-VariableItalic.ttf') format('truetype');
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Switzer';
+	src: url('../fonts/Switzer-Variable.ttf') format('truetype');
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Switzer';
+	src: url('../fonts/Switzer-VariableItalic.ttf') format('truetype');
+	font-style: italic;
+	font-display: swap;
+}
+
+/* ! Variable */
+:root {
+	--primary: #75ff69;
+	--secondary: #1b3936;
+	--primary-font: 'Boska', sans-serif;
+	--secondary-font: 'Switzer', sans-serif;
+}
+/* ! Reset Css */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: var(--primary-font);
+	background-image: url('../images/home_bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	width: 100%;
+	max-width: 1194px;
+	margin: 0 auto;
+}
+/* ! Header */
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.navbar .nav {
+	display: flex;
+	align-items: center;
+	gap: 54px;
+}
+.navbar .nav li a {
+	color: #fff;
+	font-family: var(--secondary-font);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+}
+/* ! Hero Section */
+.hero_section_area {
+	padding: 120px 0px 172px;
+	position: relative;
+}
+.hero_section_area img {
+	position: absolute;
+	top: -135px;
+	width: 1188px;
+	height: 1188px;
+	rotate: 11.9deg;
+	z-index: 1;
+}
+.hero_section {
+	max-width: 1070px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+.title_area h1 {
+	color: #fff;
+	text-align: center;
+	font-family: var(--primary-font);
+	font-size: 262px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 161.765px;
+	text-transform: capitalize;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 50px;
+}
+.title_area h1 span {
+	color: var(--primary);
+	font-style: italic;
+	line-height: 185.553px;
+	margin-top: 46px;
+	margin-left: 410px;
+}
+.title_area h1 .small_text {
+	font-size: 32px;
+	line-height: 42px;
+	font-weight: 700;
+	color: #fff;
+	margin-top: 28px;
+	margin-left: 253px;
+}
+.title_area h1 .woods_text {
+	margin-left: 48px;
+}
+.hero_section p {
+	max-width: 570px;
+	width: 100%;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+	font-family: var(--secondary-font);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.play_icon_wrap {
+	width: 82px;
+	position: absolute;
+	right: -8.5%;
+	top: 46%;
+	height: 82px;
+	border-radius: 82px;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.play_icon_wrap .play_icon {
+	width: 70px;
+	height: 70px;
+	border-radius: 70px;
+	background-color: var(--primary);
+	position: relative;
+}
+.play_icon_wrap .play_icon img {
+	width: 17px;
+	height: 23px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	rotate: 0deg;
+	transform: translate(-50%, -50%);
+}
+/* ! Info Section */
+.info_section_wrap {
+	padding: 107px 0px 125px;
+	background-color: #fff;
+	margin-top: -10px;
+	position: relative;
+	z-index: 2;
+}
+.info_section {
+	display: flex;
+	justify-content: space-between;
+}
+/* ! Info Section */
+.info_image {
+	position: relative;
+	margin-bottom: 40px;
+	width: 203px;
+}
+.tree_wrap {
+	width: 170px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.tree_tow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.tree_wrap h2 {
+	color: var(--secondary);
+	font-family: var(--primary-font);
+	font-size: 151.773px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 107.621px;
+	margin-top: -35px;
+}
+.info_left p {
+	max-width: 609px;
+	width: 100%;
+	color: var(--secondary);
+	font-family: var(--secondary-font);
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+}
+.info_right {
+	display: flex;
+	flex-direction: column;
+	gap: 104px;
+}
+.info_right .info_card {
+	color: var(--secondary);
+	font-family: var(--secondary-font);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+}
+.info_right .info_card h2 {
+	color: var(--secondary);
+	font-family: var(--primary-font);
+	font-size: 100px;
+	font-weight: 700;
+	line-height: 130px;
+	margin-top: -30px;
+}
+.info_right .info_card h2 span {
+	color: var(--secondary);
+	font-family: var(--secondary-font);
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+}
+.nature_section img {
+	width: 100%;
+}
+/* ! Footer Area */
+footer {
+	background-color: #fff;
+	padding: 19px 0px 17px;
+}
+footer ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 58px;
+}
+footer ul li a {
+	color: var(--secondary);
+	font-family: var(--secondary-font);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 32px;
+}
