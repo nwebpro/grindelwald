@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Grindelwald - Static Mania</title>
+		<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
@@ -130,6 +132,156 @@
 				alt="nature"
 			/>
 		</section>
+		<!-- Testimonials -->
+		<section class="testimonials_section_area">
+			<div class="container">
+				<div class="top_area">
+					<div class="testimonials_left">
+						<h2>Experience the Magic of The Wilderness Retreat</h2>
+					</div>
+					<div class="testimonials_right">
+						<p>
+							Welcome to our cosy  cabin in the woods! Our rental
+							home, nestled in the heart of the forest.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper testimonial_slider_wrap">
+					<div class="swiper-slide">
+						<div class="item">
+							<img
+								src="assets/images/testimonial1.png"
+								draggable="false"
+								alt="Testimonials Image"
+							/>
+							<div class="content_wrap">
+								<h3>✌️</h3>
+								<h2>Peaceful</h2>
+								<p>
+									"We had such a wonderful time at The
+									Wilderness Retreat. The cabin was cozy and
+									co...
+								</p>
+								<div class="testimonials_content"></div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item">
+							<img
+								src="assets/images/testimonial2.png"
+								draggable="false"
+								alt="Testimonials Image"
+							/>
+							<div class="content_wrap">
+								<h3>✌️</h3>
+								<h2>Peaceful</h2>
+								<p>
+									"We had such a wonderful time at The
+									Wilderness Retreat. The cabin was cozy and
+									co...
+								</p>
+								<div class="testimonials_content"></div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item">
+							<img
+								src="assets/images/testimonial3.png"
+								draggable="false"
+								alt="Testimonials Image"
+							/>
+							<div class="content_wrap">
+								<h3>✌️</h3>
+								<h2>Peaceful</h2>
+								<p>
+									"We had such a wonderful time at The
+									Wilderness Retreat. The cabin was cozy and
+									co...
+								</p>
+								<div class="testimonials_content"></div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item">
+							<img
+								src="assets/images/testimonial1.png"
+								draggable="false"
+								alt="Testimonials Image"
+							/>
+							<div class="content_wrap">
+								<h3>✌️</h3>
+								<h2>Peaceful</h2>
+								<p>
+									"We had such a wonderful time at The
+									Wilderness Retreat. The cabin was cozy and
+									co...
+								</p>
+								<div class="testimonials_content"></div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item">
+							<img
+								src="assets/images/testimonial2.png"
+								draggable="false"
+								alt="Testimonials Image"
+							/>
+							<div class="content_wrap">
+								<h3>✌️</h3>
+								<h2>Peaceful</h2>
+								<p>
+									"We had such a wonderful time at The
+									Wilderness Retreat. The cabin was cozy and
+									co...
+								</p>
+								<div class="testimonials_content"></div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="item">
+							<img
+								src="assets/images/testimonial3.png"
+								draggable="false"
+								alt="Testimonials Image"
+							/>
+							<div class="content_wrap">
+								<h3>✌️</h3>
+								<h2>Peaceful</h2>
+								<p>
+									"We had such a wonderful time at The
+									Wilderness Retreat. The cabin was cozy and
+									co...
+								</p>
+								<div class="testimonials_content"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="navigation_wrap">
+				<div class="testimonial_prev">
+					<img
+						src="assets/images/prev.svg"
+						draggable="false"
+						alt="Arrow"
+					/>
+				</div>
+				<div class="testimonial_next">
+					<img
+						src="assets/images/next.svg"
+						draggable="false"
+						alt="Arrow"
+					/>
+				</div>
+			</div>
+		</section>
 		<!-- Footer -->
 		<footer>
 			<div class="contact_section_wrap">
@@ -211,5 +363,17 @@
 				<li><a href="#">Instructions</a></li>
 			</ul>
 		</footer>
+		<script src="assets/js/swiper-bundle.min.js"></script>
+		<script>
+			let swiper = new Swiper('.mySwiper', {
+				slidesPerView: 4,
+				spaceBetween: 250,
+				loop: true,
+				navigation: {
+					prevEl: '.testimonial_prev',
+					nextEl: '.testimonial_next',
+				},
+			});
+		</script>
 	</body>
 </html>
